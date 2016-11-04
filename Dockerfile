@@ -8,7 +8,7 @@ RUN apt-get update -y && apt-get install -y wget unzip less vim bzip2 make gcc z
 
 WORKDIR /usr/local/bin
 
-# bwa-0.7.13
+# bwa-0.7.15-1142-dirty
 #COPY bwa-0.7.13.tar.bz2 .
 #RUN tar -xjf bwa-0.7.13.tar.bz2 && rm bwa-0.7.13.tar.bz2 && cd bwa-0.7.13 && make
 #ENV PATH=/usr/local/bin/bwa-0.7.13:$PATH
