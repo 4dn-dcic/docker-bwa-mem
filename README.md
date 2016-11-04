@@ -15,7 +15,7 @@ cd docker-bwa-mem
 ```
 
 ## Resources tools
-Major software tools used inside the docker container are downloaded by the script `downloads.sh`. This script also creates a symlink to a version-independent folder for each software tool. In order to build an updated docker image with a new version of the tools, `Dockerfile` doesn't need to be modified, unless the new tool requires a specific APT tool that need to be downloaded. 
+Major software tools used inside the docker container are downloaded by the script `downloads.sh`. This script also creates a symlink to a version-independent folder for each software tool. In order to build an updated docker image with a new version of the tools, ideally only `downloads.sh` should be modified, but not `Dockerfile`, unless the new tool requires a specific APT tool that need to be downloaded. 
 The `downloads.sh` file also contains comment lines that specifies the name and version of individual software tools.
 
 
