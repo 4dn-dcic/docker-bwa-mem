@@ -1,10 +1,11 @@
 # Docker-bwa-mem
 
-This repo contains the source files for a docker image stored in duplexa/bwa-mem:v1. (we will change the docker hub account soon)
 
 Alignment module for Hi-C data, based on bwa-mem.
 * Input : a pair of Hi-C fastq files
 * Output : a bam file (Lossless, not sorted by coordinate)
+
+This repo contains the source files for a docker image stored in duplexa/bwa-mem:v1. (we will change the docker hub account soon)
 
 
 ## Cloning the repo
