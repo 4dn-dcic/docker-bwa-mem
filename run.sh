@@ -14,13 +14,13 @@ index=`ls -1 *.bwt | head -1 | sed 's/\.bwt//g'`
 if [[ $fastq1 =~ \.gz$ ]]
 then
   gunzip $fastq1
-  fastq1=${$fastq1//.gz$/}
+  fastq1=${fastq1/%\.gz/}
 fi
 
 if [[ $fastq2 =~ \.gz$ ]]
 then
   gunzip $fastq2
-  fastq2=${$fastq2//.gz$/}
+  fastq2=${fastq2/%\.gz/}
 fi
 
 # run bwa
